@@ -1,54 +1,76 @@
-body{background-color: #FFFFCC;}
-header{
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Martel:wght@200;300;400;600;700;800;900&display=swap');
+
+
+
+/* Première Ligne du header*/
+.firstLine{
   display: grid;
-  grid-template-columns: 10% auto 20%;
-  grid-template-rows: 60%;
-  margin-top: -1%;
-  margin-left: -1%;
+  grid-template-columns: 10% 12% 1fr 20%;
+  padding: 1em;
+  margin-top: -1em;
+  margin-left: -1em;
+  margin-right: -1em;
+  background: #4182A4;
+background: -moz-linear-gradient(left, #4182A4 0%, #3DB4D5 53%, #4182A4 100%);
+background: -webkit-linear-gradient(left, #4182A4 0%, #3DB4D5 53%, #4182A4 100%);
+background: linear-gradient(to right, #4182A4 0%, #3DB4D5 53%, #4182A4 100%);
 }
+
 /* Menu */
 .logoMenu{
-  background-color: #4281A4ff;
-  padding-right: 10%;
-  padding-left: 15%;
-  padding-top: 10%;
-padding-bottom: 8%;
-  border-top-right-radius: 10% 5%;
-  border-bottom-right-radius: 80% 80%;
-  border-bottom-left-radius: 10% 5%;
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 2em;
+  align-items: center;  
 }
 .imgLogoMenu{
-  display: flexbox;
-  align-content: center;
-  width: 50%;
+  height: 1.8em;
 }
 
 
-/* Ttile */
-.boxTitle{
+
+/* Title */
+.boxTitleAndLogo{
+  display: grid;
+  justify-content: center;
   align-items: center;
-  background-color: #4281A4ff;
-  padding-top: 2%;
-  padding-bottom: 8%;
-  padding-left: 8%;
-  padding-right: 8%;
-  margin-left: 25%;
-
-  border-bottom-right-radius: 90% 200px;
-  border-bottom-left-radius:  80% 200px;
-}
-.firstTitle{
-  font-size: 3em;
-  color: #FFFFCC;
-  text-align: center;
-  margin-top: 0%;
-  margin-bottom: 0%;
-}
-.secondTitle{
-  font-size: 2em;
-  color: #FFFFCC;
-  text-align: center;
-  margin-top: 0%;
-  margin-bottom: 3%;
+  grid-column: 3 / 4;
+  border-bottom-left-radius: 70% 200%;
+  border-bottom-right-radius: 70% 200%;
+  border-top-left-radius: 70% 200%;
+  border-top-right-radius: 70% 200%;
 }
 
+.boxMiddle{
+  margin-top: -1em;
+  display: flex;
+  grid-column: 2 / 3;
+}
+
+.logoTitle{
+  height: 7em;
+  padding-bottom: 1em;
+  padding-top: 1em;
+}
+
+.boxTitle{
+  margin-top: 2.5em;
+  margin-left: -1.8em;
+  font-family: 'Martel', serif;
+}
+
+.titleOne{
+  color: hsl(209, 43%, 90%);
+  font-size: 200%;
+  font-weight: 600;
+  letter-spacing: 0.5rem;
+  margin-bottom: -0.7em;
+}
+
+.titleTwo{
+  color: #D9E5F0;
+  font-size: 100%;
+  font-weight: 100;
+  letter-spacing: 0.5rem;
+}
