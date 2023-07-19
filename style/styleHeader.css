@@ -1,14 +1,14 @@
 @import url(https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Martel:wght@200;300;400;600;700;800;900&display=swap);
+body {
+  margin: 0px;
+}
 .firstLine {
+  padding-bottom: 1vh;
   position: relative;
   z-index: 10;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 10%;
-  padding: 1vh 1vw 1vh 1vw;
-  margin-top: -1.5vh;
-  margin-left: -1vw;
-  margin-right: -1vw;
+  grid-template-columns: 1fr 1fr 1fr 15%;
   background: #4182a4;
   background: -moz-linear-gradient(left, #4182a4 0, #3db4d5 53%, #4182a4 100%);
   background: -webkit-linear-gradient(
@@ -20,6 +20,7 @@
   background: linear-gradient(to right, #4182a4 0, #3db4d5 53%, #4182a4 100%);
 }
 .boxTitleAndLogo {
+  margin-left: 1vw;
   display: grid;
   justify-content: center;
   align-items: center;
@@ -54,6 +55,7 @@
   letter-spacing: 0.5rem;
 }
 .menuLogo {
+  padding-top: 1.3vh;
   grid-column: 4 / 5;
   grid-row: 1/2;
   display: flex;
@@ -62,7 +64,7 @@
 }
 .nav-toggler {
   z-index: 11;
-  height: 3vh;
+  height: 3vw;
   width: 5vw;
   border: none;
   outline: 0;
@@ -73,16 +75,16 @@ span.line {
   position: absolute;
   display: block;
   width: 3vw;
-  height: 0.3vh;
-  min-height: 0.2vh;
+  min-width: 35px;
+  height: 3px;
   background: #ffffcc;
   transition: transform 0.3s ease-out, opacity 0.1s ease-out;
 }
 .l1 {
-  transform: translateY(-1vw);
+  transform: translateY(-15px);
 }
 .l3 {
-  transform: translateY(+1vw);
+  transform: translateY(+15px);
 }
 .nav-toggler.active .l1 {
   transform: translateY(0) rotate(135deg);
@@ -96,8 +98,6 @@ span.line {
 nav {
   position: relative;
   z-index: 1;
-  margin-left: -1vw;
-  padding: 1vh 1vw 1vh 1vw;
   width: 100vw;
   min-height: 50vh;
   display: flex;
