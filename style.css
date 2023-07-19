@@ -1,9 +1,10 @@
 @import url(https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Martel:wght@200;300;400;600;700;800;900&display=swap);
 .firstLine {
+  position: relative;
   z-index: 10;
   display: grid;
-  grid-template-columns: 10% 12% 1fr 20%;
+  grid-template-columns: 1fr 1fr 1fr 10%;
   padding: 1vh 1vw 1vh 1vw;
   margin-top: -1.5vh;
   margin-left: -1vw;
@@ -22,7 +23,7 @@
   display: grid;
   justify-content: center;
   align-items: center;
-  grid-column: 3/4;
+  grid-column: 1/2;
 }
 .boxMiddle {
   margin-top: -1vh;
@@ -40,20 +41,20 @@
   font-family: Martel, serif;
 }
 .titleOne {
-  color: #FFFFCC;
+  color: #ffffcc;
   font-size: 270%;
   font-weight: 600;
   letter-spacing: 0.5rem;
   margin-bottom: -0.7em;
 }
 .titleTwo {
-  color: #2E5379;
+  color: rgb(46, 83, 121, 0.5);
   font-size: 100%;
   font-weight: 100;
   letter-spacing: 0.5rem;
 }
-.menuLogo{
-  grid-column: 1/2;
+.menuLogo {
+  grid-column: 4 / 5;
   grid-row: 1/2;
   display: flex;
   justify-content: center;
@@ -74,14 +75,14 @@ span.line {
   width: 3vw;
   height: 0.3vh;
   min-height: 0.2vh;
-  background: #FFFFCC;
+  background: #ffffcc;
   transition: transform 0.3s ease-out, opacity 0.1s ease-out;
 }
 .l1 {
-  transform: translateY(-18px)
+  transform: translateY(-1vw);
 }
 .l3 {
-  transform: translateY(+18px);
+  transform: translateY(+1vw);
 }
 .nav-toggler.active .l1 {
   transform: translateY(0) rotate(135deg);
@@ -94,7 +95,7 @@ span.line {
 }
 nav {
   position: relative;
-  z-index: -4;
+  z-index: 1;
   margin-left: -1vw;
   padding: 1vh 1vw 1vh 1vw;
   width: 100vw;
@@ -103,7 +104,7 @@ nav {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-   background: #4182a4;
+  background: #4182a4;
   background: -moz-linear-gradient(left, #4182a4 0, #3db4d5 53%, #4182a4 100%);
   background: -webkit-linear-gradient(
     left,
@@ -120,7 +121,7 @@ nav.active {
 }
 
 nav a {
-  color: #FFFFCC;
+  color: #ffffcc;
   font-family: Martel, serif;
   display: block;
   font-size: 160%;
@@ -128,5 +129,3 @@ nav a {
   margin: 5vh;
   text-decoration: none;
 }
-
-
