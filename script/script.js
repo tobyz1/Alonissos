@@ -8,3 +8,9 @@ function toggleNav() {
   hamburgerButton.classList.toggle("active");
   navigation.classList.toggle("active");
 }
+
+$$(".hover").mouseleave(
+  function () {
+    $(this).removeClass("hover");
+  }
+);

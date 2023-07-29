@@ -2,7 +2,17 @@
 @import url(https://fonts.googleapis.com/css2?family=Martel:wght@200;300;400;600;700;800;900&display=swap);
 body {
   margin: 0px;
+  background: #4182a4;
+  background: -moz-linear-gradient(left, #4182a4 0, #3db4d5 53%, #4182a4 100%);
+  background: -webkit-linear-gradient(
+    left,
+    #4182a4 0,
+    #3db4d5 53%,
+    #4182a4 100%
+  );
+  background: linear-gradient(to right, #4182a4 0, #3db4d5 53%, #4182a4 100%);
 }
+
 .firstLine {
   padding-bottom: 1vh;
   position: relative;
@@ -41,18 +51,21 @@ body {
   margin-left: -0.5vw;
   font-family: Martel, serif;
 }
+
 .titleOne {
   color: #ffffcc;
   font-size: 270%;
   font-weight: 600;
   letter-spacing: 0.5rem;
   margin-bottom: -0.7em;
+  text-shadow: 3px 2px 6px rgba(186, 186, 149, 0.76);
 }
 .titleTwo {
-  color: rgb(46, 83, 121, 0.5);
-  font-size: 100%;
+  color: #ffffcc;
+  font-size: 150%;
   font-weight: 100;
   letter-spacing: 0.5rem;
+  text-shadow: 3px 2px 6px rgba(186, 186, 149, 0.76);
 }
 .menuLogo {
   padding-top: 1.3vh;
@@ -97,7 +110,7 @@ span.line {
 }
 nav {
   position: relative;
-  z-index: 1;
+  z-index: 3;
   width: 100vw;
   min-height: 50vh;
   display: flex;
@@ -128,4 +141,44 @@ nav a {
   font-weight: 200;
   margin: 5vh;
   text-decoration: none;
+}
+.presentation {
+  z-index: 1;
+  position: relative;
+  top: -45vh;
+}
+
+.snip1374 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin-left: -0.1vw;
+  width: 100%;
+}
+.snip1374 img {
+  max-width: 100%;
+  vertical-align: top;
+  -webkit-transition: all 5s ease-out;
+  transition: all 5s ease-out;
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+.snip1374:hover img,
+.snip1374.hover img {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.ouverture {
+  margin-top: 15vh;
+  padding-left: 15vw;
+  padding-right: 15vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffcc;
+  font-size: 140%;
+  font-weight: 300;
+  letter-spacing: 2px;
 }
