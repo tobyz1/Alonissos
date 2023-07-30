@@ -9,8 +9,50 @@ function toggleNav() {
   navigation.classList.toggle("active");
 }
 
-$$(".hover").mouseleave(
-  function () {
-    $(this).removeClass("hover");
-  }
-);
+
+
+const slidingAlonissosPhotos = document.querySelector('.alonissos-photos');
+
+window.addEventListener('scroll', () => {
+
+    const {scrollTop, clientHeight} = document.documentElement;
+
+    const topElementToTopViewport = slidingAlonissosPhotos.getBoundingClientRect().top;
+
+    console.log(topElementToTopViewport);
+
+    if(scrollTop > (scrollTop + topElementToTopViewport).toFixed() - clientHeight * 0.7){
+      slidingAlonissosPhotos.classList.add('active')
+    }
+})
+
+const slidingalonissosText = document.querySelector('.alonissos');
+
+window.addEventListener('scroll', () => {
+
+    const {scrollTop, clientHeight} = document.documentElement;
+
+    const topElementToTopViewport = slidingalonissosText.getBoundingClientRect().top;
+
+    console.log(topElementToTopViewport);
+
+    if(scrollTop > (scrollTop + topElementToTopViewport).toFixed() - clientHeight * 0.7){
+      slidingalonissosText.classList.add('active')
+    }
+})
+
+const slidingOuvertureText = document.querySelector('.ouverture');
+
+window.addEventListener('load', () => {
+
+   slidingOuvertureText.classList.add('active');
+
+})
+
+const openPanorama = document.querySelector('.panorama');
+
+window.addEventListener('load', () => {
+
+   openPanorama.classList.add('active');
+
+})
