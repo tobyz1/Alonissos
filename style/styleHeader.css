@@ -3,7 +3,7 @@
 body {
   margin: 0px;
   margin-left: -1.2vw;
-  background: #ffffcc;
+  background: #ffefe2;
 }
 
 .firstLine {
@@ -47,7 +47,7 @@ body {
 }
 
 .titleOne {
-  color: #ffffcc;
+  color: #ffefe2;
   font-size: 270%;
   font-weight: 600;
   letter-spacing: 0.5rem;
@@ -55,7 +55,7 @@ body {
   text-shadow: 3px 2px 6px rgba(186, 186, 149, 0.76);
 }
 .titleTwo {
-  color: #ffffcc;
+  color: #ffefe2;
   font-size: 150%;
   font-weight: 100;
   letter-spacing: 0.5rem;
@@ -84,7 +84,7 @@ span.line {
   width: 3vw;
   min-width: 35px;
   height: 3px;
-  background: #ffffcc;
+  background: #ffefe2;
   transition: transform 0.3s ease-out, opacity 0.1s ease-out;
 }
 .l1 {
