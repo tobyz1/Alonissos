@@ -49,10 +49,43 @@ window.addEventListener('load', () => {
 
 })
 
-const openPanorama = document.querySelector('.panorama');
+const openPanorama = document.querySelector('.snip1374');
 
 window.addEventListener('load', () => {
 
    openPanorama.classList.add('active');
 
 })
+
+
+const scrollBorderBottom = document.querySelector('.borderBotPres');
+
+window.addEventListener('scroll', () => {
+
+    const {scrollTop, clientHeight} = document.documentElement;
+
+    const topElementToTopViewport = slidingalonissosText.getBoundingClientRect().top;
+
+    console.log(topElementToTopViewport);
+
+  if (scrollTop > (scrollTop + topElementToTopViewport).toFixed() - clientHeight * 0.7) {
+      scrollBorderBottom.classList.add('active')
+    }
+})
+
+const scrollBorderBottomDiscover = document.querySelector('.borderBotDiscover');
+
+window.addEventListener('scroll', () => {
+
+    const {scrollTop, clientHeight} = document.documentElement;
+
+    const topElementToTopViewport = slidingalonissosText.getBoundingClientRect().top;
+
+    console.log(topElementToTopViewport);
+
+  if (scrollTop > (scrollTop + topElementToTopViewport).toFixed() - clientHeight * 0.23) {
+      scrollBorderBottomDiscover.classList.add('active')
+    }
+})
+
+

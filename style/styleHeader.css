@@ -1,9 +1,10 @@
 @import url(https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Martel:wght@200;300;400;600;700;800;900&display=swap);
 body {
+  height: 300vh;
   margin: 0px;
   margin-left: -1.2vw;
-  background: #ffefe2;
+  background: #fde1cb;
 }
 
 .firstLine {
@@ -150,20 +151,20 @@ nav a {
   width: 100%;
   max-width: 65vw;
   margin-left: 17vw;
-}
-.panorama {
   opacity: 0;
-  transition: opacity 0.4s ease-out;
+  transition: opacity 0.9s ease-in-out;
 }
-.panorama.active {
+
+.snip1374.active {
   opacity: 1;
 }
 .snip1374 img {
   vertical-align: top;
-  -webkit-transition: all 6s ease-out;
-  transition: all 6s ease-out;
+  -webkit-transition: transform 6s ease-out;
   -webkit-transform: scale(1);
   transform: scale(1);
+
+  transition: transform 6s ease-out;
 }
 .snip1374:hover img,
 .snip1374.hover img {
@@ -182,17 +183,7 @@ nav a {
 
   padding-left: 32vw;
 }
-.texte-ouverture {
-  background: #4182a4;
-  background: -moz-linear-gradient(left, #4182a4 0, #3db4d5 53%, #4182a4 100%);
-  background: -webkit-linear-gradient(
-    left,
-    #4182a4 0,
-    #3db4d5 53%,
-    #4182a4 100%
-  );
-  background: linear-gradient(to right, #4182a4 0, #3db4d5 53%, #4182a4 100%);
-}
+
 p {
   margin-top: 8vh;
   padding-left: 15vw;
@@ -236,4 +227,42 @@ p {
 .alonissos.active {
   transform: translateX(0%);
   opacity: 1;
+}
+
+.borderBotPres {
+  background: #4182a4;
+  background: -moz-linear-gradient(left, #4182a4 0, #3db4d5 53%, #4182a4 100%);
+  background: -webkit-linear-gradient(
+    left,
+    #4182a4 0,
+    #3db4d5 53%,
+    #4182a4 100%
+  );
+  background: linear-gradient(to right, #4182a4 0, #3db4d5 53%, #4182a4 100%);
+  height: 2px;
+  transform: scaleX(0);
+  transition: transform 1.3s ease;
+  transform-origin: left;
+}
+.borderBotPres.active {
+  transform: scaleX(1);
+}
+
+.borderBotDiscover {
+  background: #4182a4;
+  background: -moz-linear-gradient(left, #4182a4 0, #3db4d5 53%, #4182a4 100%);
+  background: -webkit-linear-gradient(
+    left,
+    #4182a4 0,
+    #3db4d5 53%,
+    #4182a4 100%
+  );
+  background: linear-gradient(to right, #4182a4 0, #3db4d5 53%, #4182a4 100%);
+  height: 2px;
+  transform: scaleX(0);
+  transition: transform 1.3s ease;
+  transform-origin: left;
+}
+.borderBotDiscover.active {
+  transform: scaleX(1);
 }
