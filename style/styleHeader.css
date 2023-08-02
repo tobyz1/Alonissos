@@ -125,6 +125,15 @@ table {
 
 @import url(https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Martel:wght@200;300;400;600;700;800;900&display=swap);
+<<<<<<< HEAD
+=======
+body {
+  height: 300vh;
+  margin: 0px;
+  margin-left: -1.2vw;
+  background: #fde1cb;
+}
+>>>>>>> 1483081a18af95cbd6dfc2ff37c0890c0686b5bf
 
 @media (min-width: 300px) and (max-width: 789px) {
   body {
@@ -173,6 +182,7 @@ table {
     grid-column: 1/2;
   }
 
+<<<<<<< HEAD
   .boxMiddle {
     margin-top: -1vh;
     display: flex;
@@ -183,6 +193,61 @@ table {
     height: 45px;
     padding-top: 0.8em;
   }
+=======
+.snip1374 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  width: 100%;
+  max-width: 65vw;
+  margin-left: 17vw;
+  opacity: 0;
+  transition: opacity 0.9s ease-in-out;
+}
+
+.snip1374.active {
+  opacity: 1;
+}
+.snip1374 img {
+  vertical-align: top;
+  -webkit-transition: transform 6s ease-out;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+
+  transition: transform 6s ease-out;
+}
+.snip1374:hover img,
+.snip1374.hover img {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+.discover-Island {
+  margin-top: -75vh;
+  padding: 0px;
+}
+.alonissos-photos {
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+
+  padding-left: 32vw;
+}
+
+p {
+  margin-top: 8vh;
+  padding-left: 15vw;
+  padding-right: 15vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #1a1110;
+  font-size: 160%;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+>>>>>>> 1483081a18af95cbd6dfc2ff37c0890c0686b5bf
 
   .boxTitle {
     margin-top: 0.5em;
@@ -381,4 +446,42 @@ table {
   }
 }
 @media (min-width: 790px) and (max-width) {
+}
+
+.borderBotPres {
+  background: #4182a4;
+  background: -moz-linear-gradient(left, #4182a4 0, #3db4d5 53%, #4182a4 100%);
+  background: -webkit-linear-gradient(
+    left,
+    #4182a4 0,
+    #3db4d5 53%,
+    #4182a4 100%
+  );
+  background: linear-gradient(to right, #4182a4 0, #3db4d5 53%, #4182a4 100%);
+  height: 2px;
+  transform: scaleX(0);
+  transition: transform 1.3s ease;
+  transform-origin: left;
+}
+.borderBotPres.active {
+  transform: scaleX(1);
+}
+
+.borderBotDiscover {
+  background: #4182a4;
+  background: -moz-linear-gradient(left, #4182a4 0, #3db4d5 53%, #4182a4 100%);
+  background: -webkit-linear-gradient(
+    left,
+    #4182a4 0,
+    #3db4d5 53%,
+    #4182a4 100%
+  );
+  background: linear-gradient(to right, #4182a4 0, #3db4d5 53%, #4182a4 100%);
+  height: 2px;
+  transform: scaleX(0);
+  transition: transform 1.3s ease;
+  transform-origin: left;
+}
+.borderBotDiscover.active {
+  transform: scaleX(1);
 }
