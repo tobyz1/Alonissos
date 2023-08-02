@@ -49,13 +49,13 @@ window.addEventListener('load', () => {
 
 })
 
-const openPanorama = document.querySelector('.snip1374');
+// const openPanorama = document.querySelector('.snip1374');
 
-window.addEventListener('load', () => {
+// window.addEventListener('load', () => {
 
-   openPanorama.classList.add('active');
+//    openPanorama.classList.add('active');
 
-})
+// })
 
 
 const scrollBorderBottom = document.querySelector('.borderBotPres');
