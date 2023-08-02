@@ -1,9 +1,6 @@
 {
   "extends": [
     "development"
-<<<<<<< HEAD
-  ]
-=======
   ],
   "hints": {
     "axe/name-role-value": [
@@ -13,5 +10,4 @@
       }
     ]
   }
->>>>>>> 1483081a18af95cbd6dfc2ff37c0890c0686b5bf
 }
