@@ -125,13 +125,7 @@ table {
 @import url(https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Martel:wght@200;300;400;600;700;800;900&display=swap);
 
-@media (min-width: 300px) and (max-width: 650px) {
-  body {
-    display: grid;
-    background: #ffefe2;
-    width: 100vw;
-    grid-template-rows: 5.2em 1fr 1fr;
-  }
+@media screen {
   header {
     grid-row: 1 / 2;
     z-index: 1;
@@ -143,7 +137,7 @@ table {
     position: relative;
     z-index: 3;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     background: #4182a4;
     background: -moz-linear-gradient(
       left,
@@ -200,7 +194,7 @@ table {
   }
 
   .menuLogo {
-    grid-column: 2/3;
+    grid-column: 5/6;
     grid-row: 1/2;
     display: flex;
     justify-content: center;
@@ -278,5 +272,65 @@ table {
     margin: 5vh;
     letter-spacing: 2px;
     text-decoration: none;
+    opacity: 0.6;
+  }
+  nav a:hover {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 321px) {
+  .logoTitle {
+    height: 35px;
+    margin-left: -5px;
+  }
+  .titleOne {
+    font-size: 120%;
+    letter-spacing: 0.4rem;
+  }
+  .titleTwo {
+    font-size: 70%;
+    letter-spacing: 0.4rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .menuLogo {
+    margin-left: -45px;
+  }
+}
+
+@media (min-width: 1250px) {
+  .firstLine {
+    padding: 1vh;
+  }
+  .nav-toggler {
+    width: 45px;
+  }
+  span.line {
+    width: 35px;
+    height: 2px;
+  }
+  .l1 {
+    transform: translateY(-12px);
+  }
+  .l3 {
+    transform: translateY(+12px);
+  }
+  .logoTitle {
+    height: 70px;
+    margin-left: -5px;
+  }
+  .titleOne {
+    padding-top: 1vh;
+    font-size: 190%;
+    letter-spacing: 0.5rem;
+  }
+  .titleTwo {
+    font-size: 100%;
+    letter-spacing: 0.5rem;
+  }
+  nav a {
+    font-size: 150%;
   }
 }
