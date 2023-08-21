@@ -1,3 +1,100 @@
+@import url(https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Martel:wght@200;300;400;600;700;800;900&display=swap);
+body {
+  background: #4182a4;
+  background: -moz-linear-gradient(left, #4182a4 0, #3db4d5 53%, #4182a4 100%);
+  background: -webkit-linear-gradient(
+    left,
+    #4182a4 0,
+    #3db4d5 53%,
+    #4182a4 100%
+  );
+  background: linear-gradient(to right, #4182a4 0, #3db4d5 53%, #4182a4 100%);
+}
 main {
-  padding-top: 67vh;
+  position: relative;
+  margin-top: 20vh;
+}
+.effetDeBlur {
+  padding-top: 2vh;
+  padding-bottom: 1vh;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  transform: translateX(-50%);
+  margin-left: 50%;
+  width: 70vw;
+  backdrop-filter: blur(50px);
+  background-color: rgba(255, 255, 255, 0.45);
+  border-radius: 5px;
+}
+.zoom1 {
+  margin-bottom: 2vh;
+  transform: translateX(-50%);
+  justify-content: center;
+  align-items: center;
+  margin-left: 50%;
+  overflow: hidden;
+  width: 65vw;
+}
+.panorama {
+  width: 65vw;
+  transition: all 4s ease-in-out;
+}
+
+.panorama:hover {
+  transform: scale(1.1);
+}
+
+.textOuverture {
+  letter-spacing: 2px;
+  color: #2e5379;
+  padding-bottom: 2vh;
+  font-size: 120%;
+  font-weight: 300;
+  transform: translateX(-50%);
+  justify-content: center;
+  align-items: center;
+  margin-left: 50%;
+  padding-top: 0.7vh;
+  padding-bottom: 3vh;
+}
+
+.zoom2 {
+  margin-bottom: 2vh;
+  overflow: hidden;
+  transform: translateX(-50%);
+  margin-left: 50%;
+  width: 40vw;
+}
+
+.portail {
+  width: 40vw;
+  transition: all 4s ease-in-out;
+}
+
+.portail:hover {
+  transform: scale(1.1);
+}
+.commentaryDiv {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.imgGoogleMapsLogo {
+  margin-top: 1vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 15vw;
+  grid-column: 2/3;
+  width: 16vw;
+}
+.imgBookingLogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10vw;
+  grid-column: 4/5;
+  width: 14vw;
 }

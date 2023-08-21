@@ -130,6 +130,7 @@ table {
     grid-row: 1 / 2;
     z-index: 1;
     position: fixed;
+    top: 0;
   }
 
   .firstLine {
@@ -264,7 +265,7 @@ table {
   }
 
   nav a {
-    color: #ffffcc;
+    color: #ffffea;
     font-family: Martel, serif;
     display: block;
     font-size: 110%;
@@ -272,7 +273,7 @@ table {
     margin: 5vh;
     letter-spacing: 2px;
     text-decoration: none;
-    opacity: 0.6;
+    opacity: 0.8;
   }
   nav a:hover {
     opacity: 1;

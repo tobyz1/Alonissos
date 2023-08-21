@@ -1,5 +1,9 @@
 .footer-basic {
-  padding: 2vh 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
   background: #4182a4;
   background: -moz-linear-gradient(left, #4182a4 0, #3db4d5 53%, #4182a4 100%);
   background: -webkit-linear-gradient(
@@ -9,7 +13,7 @@
     #4182a4 100%
   );
   background: linear-gradient(to right, #4182a4 0, #3db4d5 53%, #4182a4 100%);
-  color: #ffffcc;
+  color: #ffffea;
 }
 
 .footer-basic ul {
@@ -30,7 +34,7 @@
 .footer-basic ul a {
   color: inherit;
   text-decoration: none;
-  opacity: 0.6;
+  opacity: 0.8;
 }
 
 .footer-basic ul a:hover {
@@ -49,10 +53,10 @@
   display: inline-block;
   text-align: center;
   border-radius: 50%;
-  border: 1px solid #ccc;
+  border: 1px solid #ffffea;
   margin: 0 8px;
   color: inherit;
-  opacity: 0.5;
+  opacity: 0.8;
 }
 .footer-basic .social > a > i {
   margin-top: 25%;
