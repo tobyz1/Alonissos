@@ -253,3 +253,25 @@ main {
 .slider-controls ul li.selected {
   background: #777777;
 }
+.salonIntérieur {
+  width: 18vw;
+  transition: all 4s ease-in-out;
+}
+.salonIntérieur:hover {
+  transform: scale(1.1);
+}
+.zoom3 {
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  overflow: hidden;
+  transform: translateX(-50%);
+  margin-left: 50%;
+  width: 25vw;
+}
+.ChambreInterieur {
+  width: 25vw;
+  transition: all 4s ease-in-out;
+}
+.ChambreIntérieur:hover {
+  transform: scale(1.1);
+}
