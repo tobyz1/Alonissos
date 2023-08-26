@@ -55,6 +55,27 @@ const weekdays = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Satur
 const nameOfBooker = document.getElementById('name')
 const emailOfBooker = document.getElementById('email')
 const dateReservation = document.getElementsByClassName('dateReservation')
+const firstDate = document.getElementById('firstDate')
+const secondDate = document.getElementById('secondDate')
+const dt = new Date()
+const day = dt.getDate()
+const month = dt.getMonth()
+const year = dt.getFullYear()
+
+function verifOfForms(date) {
+    let firstDate = date.toISOSstring()
+    let dateMinimum = currentDate.toISOSstring()
+    
+    // const minDateString = minDate.toISOString().split('T')[0]
+    // const currentDateString = currentDate.toISOString()
+    // const dateString = date.toISOString()
+    console.log(currentDate)
+    console.log(date)
+    console.log(minDate)
+    // firstDate.setAttribute('min', currentDateString)
+    // firstDate.setAttribute('value', dateString)
+    // secondDate.setAttribute('min', minDateString)
+}
 
 
 function openModal(date) {
@@ -65,8 +86,15 @@ function openModal(date) {
     if (eventForDay) {
         document.getElementById('eventText').innerText = eventForDay.title
         deleteEventModal.style.display = 'block'
+        
     } else {
         newEventModal.style.display = 'block'
+        const dateParts = clicked.split('/')
+        const isoDateString = dateParts[2] + '-' + (dateParts[1].length === 1 ? '0' : '') + dateParts[1] + '-' + (dateParts[0].length === 1 ? '0' : '') + dateParts[0]
+        const currentDayString = `${year}-0${month}-${day}`
+
+        firstDate.setAttribute('value', isoDateString)  
+        firstDate.setAttribute('min', currentDayString)
     }
     backDrop.style.display = 'flex'
 }
@@ -174,6 +202,7 @@ function initButtons() {
     document.getElementById('deleteButton').addEventListener('click', deleteEvent)
     document.getElementById('closeButton').addEventListener('click', closeModal)
 }
+
 
 initButtons()
 load()
