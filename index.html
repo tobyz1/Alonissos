@@ -264,24 +264,77 @@
               </div>
             </div>
             <div id="weekdays">
-              <div>Monday</div>
-              <div>Tuesday</div>
-              <div>Wednesday</div>
-              <div>Thursday</div>
-              <div>Friday</div>
-              <div>Saturday</div>
-              <div>Sunday</div>              
+              <div id="monday">Monday</div>
+              <div id="tuesday">Tuesday</div>
+              <div id="wednesday">Wednesday</div>
+              <div id="thursday">Thursday</div>
+              <div id="friday">Friday</div>
+              <div id="saturday">Saturday</div>
+              <div id="sunday">Sunday</div>              
             </div>
             <div id="calendar"></div>   
             <div id="newEventModal">
-              <h2>New Event</h2>
-              <input id="eventTitleInput" placeholder="EventTitle">
-
-              <button id="saveButton">Save</button>
-              <button id="cancelButton">Cancel</button>
-            </div>        
+              <h2>Booking Zone</h2>
+              <div id="visitorZone">
+                <form id="reservationForm">
+                  <p id="name">
+                    <label>
+                      Name<br>
+                      <input type="text">
+                    </label>
+                  </p>
+                  <p id="email">
+                    <label>
+                      Email<br>
+                      <input type="email">
+                    </label>
+                  </p>
+                  <p id="date1" class="dateReservation">
+                    <label>
+                      Check In<br>
+                      <input type="date">
+                    </label>
+                  </p>
+                  <p id="date2" class="dateReservation">
+                    <label>
+                      Check Out<br>
+                      <input type="date">
+                    </label>
+                  </p>
+                    <button type="submit" id="submitButton">Check Availability*</button>
+                    <p id="explanationText">*An email will be sent at the owner, he will contact you on your eamil</p>
+                    <button id="cancelButton">Cancel</button>
+                  </form>
+              </div>
+              <div id="adminZone">
+                <button id="adminButton">Admin</button>
+                <div id="authentification">
+                  <div>
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" />
+                  </div>
+                  <div>
+                    <label for="pass">Password (8 characters minimum):</label>
+                    <input type="password" id="pass" name="password" minlength="8" required />
+                  </div>
+                  <input type="submit" value="Sign in" />
+                </div>
+                <div id="modification">
+                  <input id="eventTitleInput" placeholder="EventTitle">
+                  <button id="saveButton">Save</button>
+                  <button id="cancelButton">Cancel</button>
+                </div>
+              </div>  
+            </div>      
+            <div id="deleteEventModal">
+              <h2>Event</h2>
+              <p id="eventText"></p>
+              <button id="deleteButton">Delete</button>
+              <button id="closeButton">Close</button>
+            </div> 
           </div>
         </section>
+        <div id="modalBackDrop"></div>
     </main>
     <div class="footer-basic">
       <footer>
