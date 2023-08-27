@@ -168,12 +168,17 @@ function load() {
     }
 }
 
+const passwordAdmin = document.getElementById('pass')
+const usernameAdmin = document.getElementById('username')
 
 function closeModal() {
     eventTitleInput.classList.remove('error')
     visitorModal.style.display = 'none'
+    adminZone.style.display='none'
     deleteEventModal.style.display = 'none'
     backDrop.style.display = 'none'
+    passwordAdmin.value = ''
+    usernameAdmin.value = ''
     eventTitleInput.value = ''
     nameOfBooker.value = ''
     emailOfBooker.value = ''
@@ -194,17 +199,17 @@ function closeModal() {
 //     } else {
 //         eventTitleInput.classList.add('error')
 //     }
-// } 
+// }
 // function deleteEvent() {
 //     events = events.filter(e => e.date !== clicked)
 //     localStorage.setItem('events', JSON.stringify(events))
 //     closeModal()
 // }
-
-function checkAvailability() {
-    
+const adminZone = document.getElementById('adminZone')
+function openAdminModal() {
+    closeModal()
+    adminZone.style.display = 'block'
 }
-
 
 function initButtons() {
     document.getElementById('nextButton').addEventListener('click', () => {
@@ -219,11 +224,17 @@ function initButtons() {
     document.getElementById('submitButton').addEventListener('click', postForms)
     document.getElementById('cancelVisitorZone').addEventListener('click', closeModal)
 
+    document.getElementById('adminButton').addEventListener('click', openAdminModal)
+
+    // document.getElementById('sign-inAdminButton').addEventListener('click', verifAuthentification)
+    document.getElementById('cancelAuthentificationButton').addEventListener('click',closeModal)
 //     document.getElementById('deleteButton').addEventListener('click', deleteEvent)
 //     document.getElementById('closeButton').addEventListener('click', closeModal)
 //  document.getElementById('saveButton').addEventListener('click', saveEvent)
 
 }
+
+
 
 function postForms() {
 const reservationForm = document.querySelector('#reservationForm')

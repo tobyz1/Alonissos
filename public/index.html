@@ -299,7 +299,7 @@
                   </div>
                   <div id="textAreaForm"> 
                     <label for="Message">Message: 
-                      <input id="textAreaInput" type="textarea" rows="15" cols="35">
+                      <textarea name="Message" id="textAreaInput" cols="30" rows="4">Here is your message for the owner</textarea>
                     </label>
                   </div>
                   <button type="submit" id="submitButton">Check Availability**</button>
@@ -309,28 +309,35 @@
               </div>
               <button id="adminButton">Admin</button>
             </div>
-            <div id="adminZone"></div>
+            <div id="adminZone">
               <section id="authentification">
+                  <h2>Admin Authentification</h2>
                   <div>
                     <label for="username">Username:</label>
-                    <input type="text" id="username" name="username" />
+                    <input type="text" id="username" name="username" required />
                   </div>
                   <div>
                     <label for="pass">Password (8 characters minimum):</label>
                     <input type="password" id="pass" name="password" minlength="8" required />
                   </div>
-                  <input type="submit" value="Sign in" />
-                </section>
-                <div id="modification">
+                  <div id="buttonAuthentification">
+                    <button id="sign-inAdminButton" type="submit">Sign In</button>
+                    <button id="cancelAuthentificationButton">Cancel</button>
+                  </div>
+                  
+                  <div id="modification">
                   <input id="eventTitleInput" placeholder="EventTitle">
                   <button id="saveButton">Save</button>
-                  <button class="cancelAuthentificationButton">Cancel</button>
+                  <button id="cancelModificationButton">Cancel</button>
                 <div id="deleteEventModal">
                 <h2>Event</h2>
                 <p id="eventText"></p>
                 <button id="deleteButton">Delete</button>
                 <button id="closeDeleteZoneButton">Close</button>
               </div> 
+                </section>
+            </div>
+              
         </section>
         <div id="modalBackDrop"></div>
     </main>

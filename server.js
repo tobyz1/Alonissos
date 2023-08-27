@@ -4,19 +4,6 @@ const app = express()
 
 const nodemailer = require('nodemailer')
 
-// (async () => {
-//   const bcrypt = require('bcryptjs')
-
-//   try {
-
-
-
-    
-//   } catch (error) {
-//     console.log(error)
-//   }
-// })()
-
 const PORT = process.env.PORT || 5000
 
 app.use(express.static('public'))
