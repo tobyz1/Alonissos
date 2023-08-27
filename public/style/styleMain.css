@@ -1,0 +1,557 @@
+@import url(https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Martel:wght@200;300;400;600;700;800;900&display=swap);
+@import url("https://fonts.googleapis.com/css2?family=GFS+Didot&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=GFS+Didot&family=Lato:wght@400&display=swap");
+:root {
+  --text-color: #333333;
+  --primary-color: #ffefe2;
+  --secondary-color: #000679;
+}
+
+body {
+  background: #4182a4;
+  background: -moz-linear-gradient(left, #4182a4 0, #3db4d5 53%, #4182a4 100%);
+  background: -webkit-linear-gradient(
+    left,
+    #4182a4 0,
+    #3db4d5 53%,
+    #4182a4 100%
+  );
+  background: linear-gradient(to right, #4182a4 0, #3db4d5 53%, #4182a4 100%);
+}
+main {
+  position: relative;
+  margin-top: 20vh;
+}
+.effetDeBlur {
+  padding-left: 4vw;
+  padding-right: 4vw;
+  padding-top: 2vh;
+  padding-bottom: 1vh;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  transform: translateX(-50%);
+  margin-left: 50%;
+  backdrop-filter: blur(30px);
+  background-color: rgba(255, 255, 255, 0.119);
+  border-radius: 5px;
+  width: 70vw;
+}
+.zoom1 {
+  margin-bottom: 2vh;
+  transform: translateX(-50%);
+  justify-content: center;
+  align-items: center;
+  margin-left: 50%;
+  overflow: hidden;
+  width: 65vw;
+}
+.panorama {
+  width: 65vw;
+  transition: all 4s ease-in-out;
+}
+
+.panorama:hover {
+  transform: scale(1.1);
+}
+
+.textOuverture {
+  letter-spacing: 0.3vw;
+  line-height: 5vh;
+  color: #fff3e7;
+  font-family: "Lato", sans-serif;
+  font-size: 140%;
+  font-weight: 200;
+  transform: translateX(-50%);
+  justify-content: center;
+  align-items: center;
+  margin-left: 50%;
+  letter-spacing: 0.1vw;
+  padding-top: 1.5vh;
+  padding-bottom: 1.5vh;
+}
+
+.zoom2 {
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  overflow: hidden;
+  transform: translateX(-50%);
+  margin-left: 50%;
+  width: 40vw;
+}
+
+.portail {
+  width: 40vw;
+  transition: all 4s ease-in-out;
+}
+
+.portail:hover {
+  transform: scale(1.1);
+}
+.commentaryDiv {
+  margin-top: 6vh;
+  margin-bottom: 2vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.imgGoogleMapsLogo {
+  margin-top: 1vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 15vw;
+  grid-column: 2/3;
+  width: 16vw;
+}
+
+.imgBookingLogo:hover {
+  background-color: rgba(0, 45, 194, 0.512);
+  backdrop-filter: blur(10px);
+  border-radius: 5px;
+}
+.imgGoogleMapsLogo:hover {
+  background-color: rgba(0, 45, 194, 0.512);
+  backdrop-filter: blur(10px);
+  border-radius: 5px;
+}
+.imgBookingLogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column: 4/5;
+  width: 10vw;
+  margin-left: 4vw;
+  margin-top: 5vh;
+}
+
+.element {
+  display: flex;
+  margin-top: 5vh;
+  height: 50vh;
+  width: 70vw;
+  padding-bottom: 5vh;
+}
+.avis::before {
+  font-family: Arial;
+  content: "\201C";
+  color: #000679;
+  font-size: 4em;
+  position: absolute;
+  left: 10px;
+  top: -4vh;
+}
+.avis {
+  font-size: 1.4em;
+  width: 60%;
+  margin: 2vh auto;
+  font-family: Open Sans;
+  font-style: italic;
+  color: #555555;
+  padding: 2vh 2vw 0vh 4vw;
+  border-left: 8px solid #000679;
+  line-height: 1.6;
+  position: relative;
+  background: #ffefe2;
+  text-shadow: 3px 2px 6px rgba(0, 136, 170, 0.514);
+  text-align: center;
+  margin-right: 10vw;
+  margin-left: -29vw;
+  margin-top: 25vh;
+  font-size: 170%;
+  letter-spacing: 0.2rem;
+  font-family: "GFS Didot", serif;
+  font-weight: 100;
+}
+.avis::after {
+  content: "";
+}
+
+.rating {
+  display: flex;
+  margin-top: 12vh;
+  margin-left: 4vw;
+}
+.rating i {
+  margin-left: 1vw;
+}
+
+.alonissos-photos-1-avis {
+  width: 15vw;
+  margin-left: 10vw;
+}
+.navigation {
+  display: flex;
+  margin-left: 25vw;
+  margin-top: 5vh;
+}
+.navigation i {
+  margin-left: 1.5vw;
+  margin-left: 1.5vw;
+}
+
+.navigation button {
+  margin-left: 1.5vw;
+  border: none;
+  outline: 0;
+  cursor: pointer;
+  background: 0 0;
+}
+.baba {
+  width: 100%;
+  margin: 2vh auto;
+}
+.carousel {
+  height: 65vh;
+  overflow: hidden;
+  position: relative;
+}
+.slider {
+  display: flex;
+  height: 100%;
+  width: 1000%;
+  transition: all 0.7s;
+}
+.slider section {
+  flex-basis: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slider-controls .arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.arrow.left {
+  left: 1vw;
+  padding: 80px 20px;
+  font-size: 5vh;
+}
+.arrow.right {
+  right: 1vw;
+  padding: 80px 20px;
+  font-size: 5vh;
+}
+
+.slider-controls ul {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+.slider-controls ul li {
+  width: 2vh;
+  height: 2vh;
+  border: 1px solid #333333;
+  border-radius: 50%;
+  margin: 0.5vw;
+  background: transparent;
+  cursor: pointer;
+}
+.slider-controls ul li.selected {
+  background: #777777;
+}
+.salonIntérieur {
+  width: 18vw;
+  transition: all 4s ease-in-out;
+}
+.salonIntérieur:hover {
+  transform: scale(1.1);
+}
+.zoom3 {
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  overflow: hidden;
+  transform: translateX(-50%);
+  margin-left: 50%;
+  width: 40vw;
+}
+.ChambreInterieur {
+  width: 40vw;
+  transition: all 4s ease-in-out;
+}
+.ChambreInterieur:hover {
+  transform: scale(1.1);
+}
+
+#header {
+  padding: 10px;
+  color: #ffefe2;
+  font-family: "Lato", sans-serif;
+  font-size: 240%;
+  font-weight: 200;
+  display: flex;
+  justify-content: space-between;
+}
+#header button {
+  position: relative;
+  top: -7px;
+  background-color: #333333;
+  width: 75px;
+  cursor: pointer;
+  box-shadow: 0px 0px 2px #333333a7;
+  border: none;
+  outline: none;
+  padding: 5px;
+  border-radius: 5px;
+  color: #ffefe2;
+}
+#container {
+  transform: translateX(-50%);
+  margin-left: 50%;
+  width: 770px;
+}
+#weekdays {
+  width: 100%;
+  display: flex;
+  color: #ffefe2;
+}
+#weekdays div {
+  font-family: "Lato", sans-serif;
+  font-size: 100%;
+  font-weight: 200;
+  width: 100px;
+  padding: 10px;
+}
+#calendar {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.day {
+  width: 100px;
+  padding: 10px;
+  height: 100px;
+  border-radius: 10%;
+  cursor: pointer;
+  box-sizing: border-box;
+  background-color: #ffefe2;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.bookDay {
+  display: flex;
+  width: 100px;
+  padding: 10px;
+  height: 100px;
+  border-radius: 10%;
+  cursor: pointer;
+  box-sizing: border-box;
+  background-color: #ff7575 !important;
+  margin: 5px;
+  flex-direction: column;
+}
+
+.day:hover {
+  background-color: #8cd7ff;
+}
+
+.day + #currentDay {
+  background-color: #6dccff;
+}
+.event {
+  font-family: "Lato", sans-serif;
+  font-size: 100%;
+  color: #ffefe2;
+  border-radius: 70%;
+  padding-left: 22.5px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.padding {
+  cursor: default !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+#visitorModal,
+#newEventModal,
+#deleteEventModal {
+  display: none;
+  z-index: 20;
+  padding: 25px;
+  background-color: #e8f4fa;
+  box-shadow: 1px 2px 13px 12px rgb(48, 48, 48);
+  border-radius: 5px;
+  width: 350px;
+  top: 100px;
+  left: calc(50% - 175px);
+  position: absolute;
+  font-family: "Lato", sans-serif;
+}
+#container h2 {
+  margin-bottom: 20px;
+}
+#eventTitleInput {
+  padding: 15px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 25px;
+  border-radius: 3px;
+  outline: none;
+  border: none;
+  box-shadow: 0px 0px 3px gray;
+}
+#eventTitleInput.error {
+  border: 2px solid red;
+}
+
+#saveButton,
+#closeButton {
+  background-color: #92a1d1;
+  width: 75px;
+  cursor: pointer;
+  box-shadow: 0px 0px 2px gray;
+  border: none;
+  outline: none;
+  padding: 5px;
+  border-radius: 5px;
+}
+#eventText {
+  font-family: "Lato", sans-serif;
+  font-size: 100%;
+  margin-bottom: 20px;
+}
+#modalBackDrop {
+  display: none;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.441);
+}
+#visitorModal h2 {
+  font-family: "Lato", sans-serif;
+  font-size: 160%;
+  background-color: #333333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 0.4vh;
+  padding-bottom: 0.4vh;
+  color: #ffefe2;
+}
+#authentification {
+  display: none;
+}
+#modification {
+  display: none;
+}
+
+#reservationForm label {
+  border: none;
+  box-shadow: none;
+  background: none;
+  font: inherit;
+  width: 100%;
+}
+#reservationForm button {
+  border: none;
+  box-shadow: none;
+  background: none;
+  font: inherit;
+  width: 100%;
+}
+#reservationForm textarea {
+  border: none;
+  box-shadow: none;
+  background: none;
+  font: inherit;
+  width: 100%;
+}
+#reservationForm select {
+  border: none;
+  box-shadow: none;
+  background: none;
+  font: inherit;
+  width: 100%;
+}
+#reservationForm {
+  margin-top: -15px;
+  margin-bottom: -25px;
+  display: grid;
+  grid: 1fr 1fr 1fr 1fr 1fr/ 1fr 1fr;
+  column-gap: 1rem;
+  row-gap: 0.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.75rem 2rem 0 rgba(#000, 0.15);
+  font-size: 1.125rem;
+}
+#reservationForm input {
+  margin-top: 0.5vh;
+  width: 100%;
+  height: 20px;
+}
+#reservationForm #emailForm {
+  grid-row: 2/3;
+  grid-column: 1/3;
+}
+#reservationForm #nameForm {
+  grid-column: 1/3;
+  grid-row: 1/2;
+}
+#reservationForm #firstDate {
+  grid-row: 3/4;
+  grid-column: 1/2;
+}
+#reservationForm #secondDate {
+  grid-row: 3/4;
+  grid-column: 2/3;
+}
+
+#reservationForm label {
+  display: block;
+}
+
+#reservationForm input:focus {
+  outline: 0;
+  border: 0;
+  box-shadow: 0 0 0 0.1rem #000679;
+}
+
+#reservationForm #submitButton {
+  cursor: pointer;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  border: 2px solid var(--secondary-color);
+  padding: 0.75rem 0.75rem;
+  border-radius: 0.25rem;
+  margin-left: 0.2vw;
+}
+
+#reservationForm #cancelVisitorZone {
+  cursor: pointer;
+  background-color: #ff7575;
+  color: var(--primary-color);
+  padding: 0.75rem 0.75rem;
+  border-radius: 0.25rem;
+  margin-left: 0.2vw;
+}
+
+#reservationForm #explanationText {
+  grid-row: 5/6;
+  grid-column: 1/3;
+  font-family: "Lato", sans-serif;
+  font-size: 70%;
+  color: #333333;
+}
+#authentification input {
+  grid-column: span 1;
+}
+#adminZone label {
+  display: block;
+}
+
+#adminZone input[type="submit"],
+label {
+  margin-top: 1rem;
+}

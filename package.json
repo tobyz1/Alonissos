@@ -1,15 +1,28 @@
 {
   "name": "alonissos",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "This is the backend of the chelidoniawebsite",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon server.js",
+    "start": "node server.js"
   },
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tobyz1/Alonissos.git"
+  },
+  "author": "tobyz1",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tobyz1/Alonissos/issues"
+  },
+  "homepage": "https://github.com/tobyz1/Alonissos#readme",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "express": "^4.18.2",
-    "node-fetch": "^3.3.2"
+    "nodemailer": "^6.9.4"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
   }
 }
