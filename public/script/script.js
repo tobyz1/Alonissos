@@ -231,6 +231,7 @@ let nom = document.getElementById('nameInput')
 let email = document.getElementById('emailInput')
 let date1 = document.getElementById('firstDate')
 let date2 = document.getElementById('secondDate')
+let textarea = document.getElementById('textAreaInput')
         
     reservationForm.addEventListener("submit", (e) => {
         e.preventDefault()
@@ -239,7 +240,8 @@ let date2 = document.getElementById('secondDate')
         nom: nom.value,
         email: email.value,
         date1: date1.value,
-        date2: date2.value
+        date2: date2.value,
+        textarea: textarea.value
         }
     
     let xhr = new XMLHttpRequest()
@@ -253,6 +255,7 @@ let date2 = document.getElementById('secondDate')
             email.value = ''
             date1.value = ''
             date2.value = ''
+            textarea.value = ''
         } else {
             alert('Something went wrong')
         }

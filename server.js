@@ -4,18 +4,18 @@ const app = express()
 
 const nodemailer = require('nodemailer')
 
-(async () => {
-  const bcrypt = require('bcryptjs')
+// (async () => {
+//   const bcrypt = require('bcryptjs')
 
-  try {
+//   try {
+
+
+
     
-
-
-    
-  } catch (error) {
-    console.log(error)
-  }
-})()
+//   } catch (error) {
+//     console.log(error)
+//   }
+// })()
 
 const PORT = process.env.PORT || 5000
 
