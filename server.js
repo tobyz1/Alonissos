@@ -1,6 +1,7 @@
 const express = require('express')
 
 const app = express()
+const bcrypt = require('bcryptjs')
 
 const nodemailer = require('nodemailer')
 
@@ -12,6 +13,13 @@ app.use(express.json())
 app.get('/', (req, res) => {
   res.sendFile(`${__dirname}/public/index.html`)
 })
+
+// bcrypt.genSalt(10, function(err, salt) {
+//     bcrypt.hash("B4c0/\/", salt, function(err, hash) {
+//         // Store hash in your password DB.
+//     });
+// });
+
 app.post('/', (req, res) => {
   console.log(req.body)
 

@@ -1,9 +1,39 @@
 {
+  "window.zoomLevel": -1,
+  "editor.minimap.enabled": false,
+  "editor.renderWhitespace": "trailing",
+  "editor.linkedEditing": true,
+  "editor.occurrencesHighlight": true,
+  "editor.suggest.insertMode": "replace",
+  "editor.acceptSuggestionOnCommitCharacter": false,
   "editor.formatOnSave": false,
   "[javascript]": {
     "editor.formatOnSave": false
   },
   "editor.codeActionsOnSave": {
     "source.fixAll": true
-  }
+  },
+
+  "files.autoSave": "onFocusChange",
+  "files.defaultLanguage": "javascript",
+  "explorer.autoReveal": false,
+  "editor.dragAndDrop": false,
+
+  "workbench.tree.indent": 20,
+  "workbench.tree.renderIndentGuides": "always",
+  "workbench.editor.enablePreview": false,
+  "emmet.triggerExpansionOnTab": true,
+
+  "git.confirmSync": false,
+  "git.enableCommitSigning": true,
+
+  "workbench.colorTheme":"Default Dark+",
+  
+  "editor.fontFamily": "'JetBrains Mono', Consolas, 'Courier New', monospace",
+  "editor.fontLigatures": true,
+  "editor.lineHeight": 25,
+  "editor.fontSize": 16,
+  "gitlens.currentLine.enabled": false,
+  "gitlens.codeLens.enabled": false,
+  "gitlens.hovers.currentLine.over": "line",
 }
