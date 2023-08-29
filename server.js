@@ -1,6 +1,6 @@
-const express = require("express")
-const app = express()
+const express = require('express')
 
+const app = express()
 
 const nodemailer = require('nodemailer')
 
@@ -10,7 +10,7 @@ app.use(express.static('public'))
 app.use(express.json())
 
 app.get('/', (req, res) => {
-  res.sendFile(__dirname + '/public/index.html')
+  res.sendFile(`${__dirname}/public/index.html`)
 })
 app.post('/', (req, res) => {
   console.log(req.body)
@@ -19,8 +19,8 @@ app.post('/', (req, res) => {
     service: 'hotmail',
     auth: {
       user: 'chelidoniahouse.alonissos@outlook.com',
-      pass: 'iY9iHsY$XqT74rQ@'
-    }
+      pass: 'iY9iHsY$XqT74rQ@',
+    },
   })
   const mailOptions = {
     from: 'chelidoniahouse.alonissos@outlook.com',
@@ -29,15 +29,14 @@ app.post('/', (req, res) => {
     text: `Name : ${req.body.nom}
            Email : ${req.body.email}
            Check-in : ${req.body.date1}
-           Check-out : ${req.body.date2}`
+           Check-out : ${req.body.date2}`,
   }
   transporter.sendMail(mailOptions, (error, info) => {
     if (error) {
       console.log(error)
       res.send('error')
-    }
-    else {
-      console.log('Email sent: ' + info.response)
+    } else {
+      console.log(`Email sent: ${info.response}`)
       res.send('success')
     }
   })
