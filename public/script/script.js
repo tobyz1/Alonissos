@@ -1,12 +1,11 @@
 const hamburgerButton = document.querySelector('.nav-toggler')
 const navigation = document.querySelector('nav')
 
-hamburgerButton.addEventListener('click', toggleNav)
-
 function toggleNav() {
   hamburgerButton.classList.toggle('active')
   navigation.classList.toggle('active')
 }
+hamburgerButton.addEventListener('click', toggleNav)
 
 const slider = document.querySelector('.slider')
 
@@ -60,7 +59,7 @@ const events = localStorage.getItem('events')
   : []
 
 const calendar = document.getElementById('calendar')
-const newEventModal = document.getElementById('newEventModal')
+// const newEventModal = document.getElementById('newEventModal')
 const deleteEventModal = document.getElementById('deleteEventModal')
 const backDrop = document.getElementById('modalBackDrop')
 const eventTitleInput = document.getElementById('eventTitleInput')
@@ -75,7 +74,7 @@ const weekdays = [
 ]
 const nameOfBooker = document.getElementById('nameInput')
 const emailOfBooker = document.getElementById('emailInput')
-const dateReservation = document.getElementsByClassName('dateReservation')
+// const dateReservation = document.getElementsByClassName('dateReservation')
 const firstDate = document.getElementById('firstDate')
 const secondDate = document.getElementById('secondDate')
 const dt = new Date()
@@ -126,7 +125,7 @@ function openModal(date) {
     firstDate.setAttribute('min', currentDayString)
     firstDate.addEventListener('change', () => {
       const selectedDate = new Date(firstDate.value)
-      if (!isNaN(selectedDate)) {
+      if (!Number.isNaN(selectedDate)) {
         const checkOutDate = new Date(
           selectedDate.getTime() + 7 * 24 * 60 * 60 * 1000,
         )
@@ -146,9 +145,9 @@ function load() {
     dt.setMonth(new Date().getMonth() + nav)
   }
 
-  const day = dt.getDate()
-  const month = dt.getMonth()
-  const year = dt.getFullYear()
+  const dayActual = dt.getDate()
+  const monthActual = dt.getMonth()
+  const yearActual = dt.getFullYear()
 
   const fisrtDayOfMonth = new Date(year, month, 1)
   const daysInMonth = new Date(year, month + 1, 0).getDate()
@@ -290,7 +289,7 @@ function postForms() {
     xhr.setRequestHeader('content-type', 'application/json')
     xhr.onload = function () {
       console.log(xhr.responseText)
-      if (xhr.responseText == 'success') {
+      if (xhr.responseText === 'success') {
         alert('Email Sent')
         nom.value = ''
         email.value = ''

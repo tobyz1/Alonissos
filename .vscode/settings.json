@@ -27,7 +27,7 @@
   "git.confirmSync": false,
   "git.enableCommitSigning": true,
 
-  "workbench.colorTheme":"Default Dark+",
+  // "workbench.colorTheme":"Community Material Theme Ocean High Contrast",
   
   "editor.fontFamily": "'JetBrains Mono', Consolas, 'Courier New', monospace",
   "editor.fontLigatures": true,
@@ -36,4 +36,57 @@
   "gitlens.currentLine.enabled": false,
   "gitlens.codeLens.enabled": false,
   "gitlens.hovers.currentLine.over": "line",
+  
+  "workbench.colorCustomizations": {
+  "activityBar.background": "#2b0040",
+  "activityBar.foreground": "#ff79c6",
+  "sideBar.background": "#1e0028",
+  "sideBar.foreground": "#f8f8f8",
+  "titleBar.activeBackground": "#2b0040",
+  "titleBar.activeForeground": "#f8f8f8",
+  "titleBar.inactiveBackground": "#2b0040",
+  "titleBar.inactiveForeground": "#8c8c8c",
+  "editor.background": "#1a001f",
+  "editor.foreground": "#f8f8f8",
+  "editor.selectionBackground": "#d587ff8f",
+  "editor.selectionHighlightBackground": "#ff79c6",
+  "editorLineNumber.foreground": "#c792ea",
+  "editorCursor.foreground": "#ff79c6",
+  "editor.lineHighlightBackground": "#2b0040",
+  "editor.findMatchBackground": "#ff79c680",
+  "editor.findMatchHighlightBackground": "#ff79c6",
+  "scrollbarSlider.background": "#ff79c680",
+  "scrollbarSlider.hoverBackground": "#ff79c6"
+},
+"editor.tokenColorCustomizations": {
+  "textMateRules": [
+    {
+      "scope": [
+        "comment", "comment",
+        "keyword",
+        "variable.language"
+      ],
+      "settings": {
+        "foreground": "#c792ea"
+      }
+    },
+    {
+      "scope": [
+        "entity.name.class"
+      ],
+      "settings": {
+        "foreground": "#f8f8f8",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "scope": [
+        "entity.name.function"
+      ],
+      "settings": {
+        "foreground": "#ff79c6"
+      }
+    }
+  ]
+}
 }

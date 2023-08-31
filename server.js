@@ -1,24 +1,21 @@
 const express = require('express')
+const mysql = require('mysql')
 
 const app = express()
-const bcrypt = require('bcryptjs')
+
 
 const nodemailer = require('nodemailer')
 
 const PORT = process.env.PORT || 5000
 
+
 app.use(express.static('public'))
 app.use(express.json())
-
 app.get('/', (req, res) => {
   res.sendFile(`${__dirname}/public/index.html`)
 })
 
-// bcrypt.genSalt(10, function(err, salt) {
-//     bcrypt.hash("B4c0/\/", salt, function(err, hash) {
-//         // Store hash in your password DB.
-//     });
-// });
+const config = require('./config.js');
 
 app.post('/', (req, res) => {
   console.log(req.body)
@@ -26,8 +23,8 @@ app.post('/', (req, res) => {
   const transporter = nodemailer.createTransport({
     service: 'hotmail',
     auth: {
-      user: 'chelidoniahouse.alonissos@outlook.com',
-      pass: 'iY9iHsY$XqT74rQ@',
+      user: config.emailUsername,
+      pass: config.emailPassword,
     },
   })
   const mailOptions = {
