@@ -149,8 +149,8 @@ function load() {
   const monthActual = dt.getMonth()
   const yearActual = dt.getFullYear()
 
-  const fisrtDayOfMonth = new Date(year, month, 1)
-  const daysInMonth = new Date(year, month + 1, 0).getDate()
+  const fisrtDayOfMonth = new Date(yearActual, monthActual, 1)
+  const daysInMonth = new Date(yearActual, monthActual + 1, 0).getDate()
 
   const dateString = fisrtDayOfMonth.toLocaleDateString('en-GB', {
     weekday: 'long',
@@ -239,11 +239,13 @@ function openAdminModal() {
 
 function initButtons() {
   document.getElementById('nextButton').addEventListener('click', () => {
-    nav++
+    nav ++
+    console.log(nav);
     load()
   })
   document.getElementById('backButton').addEventListener('click', () => {
-    nav--
+    nav -- 
+    console.log(nav);
     load()
   })
 
@@ -304,6 +306,7 @@ function postForms() {
     xhr.send(JSON.stringify(formData))
   })
 }
+
 
 initButtons()
 load()

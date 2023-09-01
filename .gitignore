@@ -1,0 +1,10 @@
+.env
+.prettierrrc
+node_modules
+.vscode
+.eslintrc.json
+.hintrc
+config.js
+package-lock.json
+package.json
+server.js
